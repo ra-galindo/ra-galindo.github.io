@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RGalindo — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,23 +17,24 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="content">
-    <h1 class="title">Hi, I'm <span class="accent">Rafael Galindo</span></h1>
+  <div class="terminal">
+    <div id="terminal-output" class="terminal-output"></div>
 
-    <p class="subtitle">
-      Computer Science • Cybersecurity • AI/ML • Software Development
-    </p>
+    <div class="terminal-input-line">
+      <span class="prompt">type-here~$</span>
+      <input
+        id="terminal-input"
+        type="text"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Terminal input"
+      />
+    </div>
+  </div>
 
-    <p class="bio">
-      I'm a Computer Science student at the University of Calgary interested in
-      cybersecurity, AI/ML, and full-stack development. I build secure systems, 
-      ML-driven tools, optimization algorithms, and backend integrations.
-      <br><br>
-      Welcome to my portfolio — explore my work below.
-    </p>
-
+  <div class="button-container">
     <a class="button" href="projects.html">View My Projects →</a>
-  </section>
+  </div>
 
   <script src="script.js"></script>
 </body>

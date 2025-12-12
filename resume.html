@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Resume — RGalindo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGalindo — Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <canvas id="matrix"></canvas>
 
   <nav>
@@ -15,17 +17,12 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="content">
-    <h1>My Resume</h1>
-    <p>You can view or download my resume below.</p>
-
-    <a class="button" href="assets/resume.pdf" download>Download PDF</a>
-
-    <iframe src="assets/resume.pdf"
-            width="100%" height="600px"
-            style="margin-top: 30px; border: none;">
-    </iframe>
-  </section>
+  <div class="terminal">
+<pre class="terminal-text">
+My Resume (PDF viewer below)
+</pre>
+    <iframe class="resume-frame" src="assets/resume.pdf"></iframe>
+  </div>
 
   <script src="script.js"></script>
 </body>
