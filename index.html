@@ -6,35 +6,325 @@
   <title>RGalindo — Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <canvas id="matrix"></canvas>
-
-  <nav>
-    <a href="index.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="terminal">
-    <div id="terminal-output" class="terminal-output"></div>
-
-    <div class="terminal-input-line">
-      <span class="prompt">type-here~$</span>
-      <input
-        id="terminal-input"
-        type="text"
-        autocomplete="off"
-        spellcheck="false"
-        aria-label="Terminal input"
-      />
+ 
+<!-- Matrix Rain Canvas -->
+<canvas id="matrix-canvas"></canvas>
+ 
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">&lt;<span>dev</span>/&gt;</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hero-status" style="margin-bottom:0;">
+    <span class="status-dot"></span>
+    Available for opportunities
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>
+      <div class="line1">Alex Galindo</div>
+      <div class="line2">Software</div>
+      <div class="line1">Engineer</div>
+    </h1>
+    <p class="hero-desc">
+      Building scalable systems and elegant interfaces. Passionate about machine learning, distributed systems, and turning complex problems into clean solutions.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">→ View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
     </div>
   </div>
-
-  <div class="button-container">
-    <a class="button" href="projects.html">View My Projects →</a>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
   </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about" class="section-bg">
+  <p class="section-label">// 001 — about</p>
+  <h2 class="section-title">Who I am</h2>
+  <div class="about-grid">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot d1"></span>
+        <span class="dot d2"></span>
+        <span class="dot d3"></span>
+        <span class="terminal-title">whoami.sh</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">➜ ~</span> <span class="t-cmd">cat profile.json</span></div>
+        <div class="t-line t-out">{</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-accent">"full_name"</span>: <span class="t-green">"Rafael Alexander Galindo"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-accent">"role"</span>: <span class="t-green">"CS Graduate & Dev"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-accent">"university"</span>: <span class="t-green">"University of Calgary"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-accent">"interests"</span>: [</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-green">"machine learning"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-green">"systems programming"</span>,</div>
+        <div class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-green">"distributed systems"</span></div>
+        <div class="t-line t-out">&nbsp;&nbsp;],</div>
+        <div class="t-line t-out">&nbsp;&nbsp;<span class="t-accent">"open_to_work"</span>: <span class="t-yellow">true</span></div>
+        <div class="t-line t-out">}</div>
+        <br>
+        <div class="t-line"><span class="t-prompt">➜ ~</span> <span class="cursor"></span></div>
+      </div>
+    </div>
+    <div class="about-text">
+      <h3>Recent Computer Science graduate with a love for building things that matter</h3>
+      <p>I recently graduated from the University of Calgary, with distinction. I have hands-on experience building full-stack software, from backend services and APIs to polished, production-ready UIs.</p>
+      <p>I've interned twice at a Calgary IT and software company and contributed to projects with hundreds of users. I write code that's readable, tested, and built to last.</p>
+      <p>When I'm not coding, I'm reading, playing sports, or obsessing over the next episode of a new show.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3.63</div>
+          <div class="stat-label">GPA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">// 002 — skills</p>
+  <h2 class="section-title">What I work with</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="skill-icon">⚙️</span>
+      <div class="skill-name">Languages</div>
+      <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">C++</span>
+        <span class="tag">C#</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Java</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🌐</span>
+      <div class="skill-name">Frontend</div>
+      <div class="skill-tags">
+        <span class="tag">React</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">Tailwind</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">Bootstrap</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🛠</span>
+      <div class="skill-name">Backend</div>
+      <div class="skill-tags">
+        <span class="tag">.NET</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Laravel</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">MSSQL</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🧠</span>
+      <div class="skill-name">ML / AI</div>
+      <div class="skill-tags">
+        <span class="tag">PyTorch</span>
+        <span class="tag">Hugging Face</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Model Tuning</span>
+        <span class="tag">Data Augmentation</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">☁️</span>
+      <div class="skill-name">Cloud & DevOps</div>
+      <div class="skill-tags">
+        <span class="tag">AWS</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">CI/CD</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <span class="skill-icon">🔬</span>
+      <div class="skill-name">CS Fundamentals</div>
+      <div class="skill-tags">
+        <span class="tag">Algorithms</span>
+        <span class="tag">OS</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Compilers</span>
+        <span class="tag">Distributed Sys</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects" class="section-bg">
+  <p class="section-label">// 003 — projects</p>
+  <h2 class="section-title">Things I've built</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-type type-ml">ML / AI</span>
+        <div class="project-links">
+          <a href="https://github.com/ra-galindo/cyber-threat-analyzer" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://cyber-threat-analyzer.netlify.app/" target="_blank" class="project-link">Demo ↗</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Cyber Threat Analyzer</div>
+        <div class="project-desc">Built a machine learning web app that analyzes text from emails for cyber threat indicators using a tuned NLP model, with a deployed frontend and backend for real-time predictions.</div>
+      </div>
+      <div class="project-footer">
+        <span class="tag">Python</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">React</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-type type-web">Web App</span>
+        <div class="project-links">
+          <a href="" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          <span class="project-link disabled">In Progress</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">RouteMyDay</div>
+        <div class="project-desc">Developed a route planning application that optimizes travel across multiple destinations using mapping data and custom route logic.</div>
+      </div>
+      <div class="project-footer">
+        <span class="tag">Python</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Google Maps API</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-type type-web">Full Stack</span>
+        <div class="project-links">
+          <a href="" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+          <span class="project-link disabled">In Progress</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Job Application Tracker</div>
+        <div class="project-desc">Built a full-stack application to track job applications, interview stages, notes, and deadlines with filtering, dashboards, and persistent data storage.</div>
+      </div>
+      <div class="project-footer">
+        <span class="tag">React</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Docker</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-type type-web">Frontend</span>
+        <div class="project-links">
+          <a href="https://github.com/ra-galindo/ra-galindo.github.io" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://ra-galindo.github.io" target="_blank" class="project-link">Live ↗</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Portfolio Website</div>
+        <div class="project-desc">Designed and deployed a personal portfolio website to showcase projects, experience, and technical skills through a custom interactive interface.</div>
+      </div>
+      <div class="project-footer">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">// 004 — contact</p>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h3>Let's build something great together</h3>
+      <p>I'm currently open to full-time opportunities, research collaborations, and interesting open-source projects.</p>
+      <br>
+
+      <div class="contact-buttons">
+        <a href="mailto:alexgalindobro@gmail.com" class="btn btn-primary">Send an email →</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Resume →</a>
+      </div>
+    </div>
+
+    <div class="contact-links">
+      <a href="mailto:alexgalindobro@gmail.com" class="contact-link">
+        <span class="contact-link-icon">✉</span>
+        <div class="cl-info">
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-val">alexgalindobro@gmail.com</div>
+        </div>
+        <span style="color: var(--muted); font-size: 12px;">↗</span>
+      </a>
+
+      <a href="https://github.com/ra-galindo" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-link-icon">⌥</span>
+        <div class="cl-info">
+          <div class="contact-link-label">GitHub</div>
+          <div class="contact-link-val">github.com/ra-galindo</div>
+        </div>
+        <span style="color: var(--muted); font-size: 12px;">↗</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/alexgalindo2" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-link-icon">in</span>
+        <div class="cl-info">
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-val">linkedin.com/in/alexgalindo2</div>
+        </div>
+        <span style="color: var(--muted); font-size: 12px;">↗</span>
+      </a>
+
+      <a href="assets/resume.pdf" download class="contact-link">
+        <span class="contact-link-icon">📄</span>
+        <div class="cl-info">
+          <div class="contact-link-label">Resume</div>
+          <div class="contact-link-val">Download PDF</div>
+        </div>
+        <span style="color: var(--muted); font-size: 12px;">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <span style="color: var(--muted);">Built with <span>♥</span> and too many energy drinks — Alex Galindo © 2026</span>
+</footer>
 
   <script src="script.js"></script>
 </body>
